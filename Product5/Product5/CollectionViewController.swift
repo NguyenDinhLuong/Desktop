@@ -35,9 +35,11 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
         return cell
     }
     
+    
     @IBAction func backButton(_ sender: Any) {
         self.performSegue(withIdentifier: "back", sender: self)
     }
+    
     
     @IBAction func clickButton(_ sender: Any) {
         let search = searchTextfield.text

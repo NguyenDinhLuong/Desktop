@@ -136,7 +136,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1366" y="-100"/>
+            <point key="canvasLocation" x="-1905" y="-78"/>
         </scene>
         <!--Cell View Controller-->
         <scene sceneID="snJ-D5-YvK">
@@ -223,7 +223,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z0N-f4-koi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-974" y="-55"/>
+            <point key="canvasLocation" x="-1172" y="-128"/>
         </scene>
         <!--Collection View Controller-->
         <scene sceneID="mnj-UI-c3i">
@@ -233,21 +233,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WwY-iv-RsR">
-                                <rect key="frame" x="25" y="40" width="129" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="&lt; Country"/>
-                                <connections>
-                                    <action selector="backButton:" destination="cay-N7-Do8" eventType="touchUpInside" id="rkz-9D-ATa"/>
-                                    <action selector="backView:" destination="cay-N7-Do8" eventType="touchUpInside" id="hAz-YM-GoU"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="India" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbA-Hs-l4h">
-                                <rect key="frame" x="25" y="104" width="73" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ahmedabad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vra-vj-EYK">
                                 <rect key="frame" x="25" y="154" width="132" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -312,41 +297,57 @@
                                 </cells>
                             </collectionView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="search:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q7Y-8M-kMN">
-                                <rect key="frame" x="190" y="104" width="169" height="42"/>
+                                <rect key="frame" x="181" y="104" width="178" height="30"/>
                                 <color key="backgroundColor" red="0.82867147020725396" green="0.82867147020725396" blue="0.82867147020725396" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2C-dS-9U8">
-                                <rect key="frame" x="325" y="154" width="34" height="30"/>
+                                <rect key="frame" x="325" y="142" width="34" height="30"/>
                                 <state key="normal" title="Click"/>
                                 <connections>
                                     <action selector="clickButton:" destination="cay-N7-Do8" eventType="touchUpInside" id="R5J-eM-7Nj"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCt-S6-tYA">
+                                <rect key="frame" x="25" y="41" width="108" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="&lt; Country"/>
+                                <connections>
+                                    <action selector="backButton:" destination="cay-N7-Do8" eventType="touchUpInside" id="MX4-Ho-g54"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="India" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbA-Hs-l4h">
+                                <rect key="frame" x="25" y="104" width="73" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="WwY-iv-RsR" firstAttribute="top" secondItem="q9a-UJ-2XR" secondAttribute="top" constant="20" id="5Ft-y5-7er"/>
+                            <constraint firstItem="QbA-Hs-l4h" firstAttribute="leading" secondItem="HCt-S6-tYA" secondAttribute="leading" id="4lr-xZ-Eo2"/>
+                            <constraint firstItem="q9a-UJ-2XR" firstAttribute="trailing" secondItem="p2C-dS-9U8" secondAttribute="trailing" constant="16" id="8Ly-df-6dM"/>
                             <constraint firstItem="MmQ-tJ-6Xo" firstAttribute="height" secondItem="ZMd-ra-U73" secondAttribute="height" multiplier="2/2.8" id="9Ws-G7-4dA"/>
-                            <constraint firstItem="Q7Y-8M-kMN" firstAttribute="leading" secondItem="QbA-Hs-l4h" secondAttribute="trailing" constant="92" id="FUU-mS-keb"/>
-                            <constraint firstItem="WwY-iv-RsR" firstAttribute="leading" secondItem="q9a-UJ-2XR" secondAttribute="leading" constant="25" id="FXX-EU-7qD"/>
+                            <constraint firstItem="QbA-Hs-l4h" firstAttribute="top" secondItem="HCt-S6-tYA" secondAttribute="bottom" constant="21" id="CoT-WK-kop"/>
                             <constraint firstItem="MmQ-tJ-6Xo" firstAttribute="width" secondItem="ZMd-ra-U73" secondAttribute="width" id="GNr-w2-YVO"/>
                             <constraint firstItem="MKb-g9-eaY" firstAttribute="top" secondItem="q9a-UJ-2XR" secondAttribute="top" constant="40" id="H6e-kV-36t"/>
-                            <constraint firstItem="Q7Y-8M-kMN" firstAttribute="bottom" secondItem="QbA-Hs-l4h" secondAttribute="bottom" id="NNO-nQ-MzD"/>
                             <constraint firstItem="Q7Y-8M-kMN" firstAttribute="trailing" secondItem="MKb-g9-eaY" secondAttribute="trailing" id="SGg-4P-YDY"/>
-                            <constraint firstItem="vra-vj-EYK" firstAttribute="top" secondItem="QbA-Hs-l4h" secondAttribute="bottom" constant="8" id="SLV-Pw-pJl"/>
                             <constraint firstItem="p2C-dS-9U8" firstAttribute="top" secondItem="Q7Y-8M-kMN" secondAttribute="bottom" constant="8" id="TPk-9A-CqO"/>
-                            <constraint firstItem="QbA-Hs-l4h" firstAttribute="top" secondItem="WwY-iv-RsR" secondAttribute="bottom" constant="16" id="eWL-ep-gEI"/>
+                            <constraint firstItem="HCt-S6-tYA" firstAttribute="leading" secondItem="q9a-UJ-2XR" secondAttribute="leading" constant="25" id="ZIQ-7g-3nD"/>
+                            <constraint firstItem="vra-vj-EYK" firstAttribute="top" secondItem="QbA-Hs-l4h" secondAttribute="bottom" constant="8" id="afu-Oo-ufa"/>
+                            <constraint firstItem="Q7Y-8M-kMN" firstAttribute="leading" secondItem="QbA-Hs-l4h" secondAttribute="trailing" constant="83" id="eIH-PO-35b"/>
+                            <constraint firstItem="q9a-UJ-2XR" firstAttribute="trailing" secondItem="Q7Y-8M-kMN" secondAttribute="trailing" constant="16" id="ebj-He-r0g"/>
                             <constraint firstItem="q9a-UJ-2XR" firstAttribute="trailing" secondItem="MmQ-tJ-6Xo" secondAttribute="trailing" id="fSZ-8A-hIH"/>
                             <constraint firstItem="q9a-UJ-2XR" firstAttribute="trailing" secondItem="MKb-g9-eaY" secondAttribute="trailing" constant="16" id="fty-va-cTM"/>
                             <constraint firstItem="q9a-UJ-2XR" firstAttribute="bottom" secondItem="MmQ-tJ-6Xo" secondAttribute="bottom" id="hGx-5F-Kvw"/>
-                            <constraint firstItem="Q7Y-8M-kMN" firstAttribute="top" secondItem="QbA-Hs-l4h" secondAttribute="top" id="jT2-Is-m6R"/>
-                            <constraint firstItem="vra-vj-EYK" firstAttribute="leading" secondItem="WwY-iv-RsR" secondAttribute="leading" id="oPV-Ds-iJH"/>
+                            <constraint firstItem="Q7Y-8M-kMN" firstAttribute="top" secondItem="MKb-g9-eaY" secondAttribute="bottom" constant="28" id="jY0-Jf-eML"/>
+                            <constraint firstItem="p2C-dS-9U8" firstAttribute="top" secondItem="Q7Y-8M-kMN" secondAttribute="bottom" constant="8" id="oKp-U2-lRS"/>
                             <constraint firstItem="MmQ-tJ-6Xo" firstAttribute="leading" secondItem="q9a-UJ-2XR" secondAttribute="leading" id="sjW-4L-KZZ"/>
+                            <constraint firstItem="vra-vj-EYK" firstAttribute="leading" secondItem="HCt-S6-tYA" secondAttribute="leading" id="snY-aD-2CN"/>
                             <constraint firstItem="p2C-dS-9U8" firstAttribute="trailing" secondItem="Q7Y-8M-kMN" secondAttribute="trailing" id="wiL-r3-YRo"/>
-                            <constraint firstItem="QbA-Hs-l4h" firstAttribute="leading" secondItem="WwY-iv-RsR" secondAttribute="leading" id="xWd-SB-0Cj"/>
+                            <constraint firstItem="HCt-S6-tYA" firstAttribute="top" secondItem="q9a-UJ-2XR" secondAttribute="top" constant="21" id="z38-I4-42E"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="q9a-UJ-2XR"/>
                     </view>
@@ -359,7 +360,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nWo-KD-ucR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-233" y="-77"/>
+            <point key="canvasLocation" x="-319.19999999999999" y="-479.01049475262374"/>
         </scene>
         <!--Community View Controller-->
         <scene sceneID="Tix-uO-o1n">
@@ -514,7 +515,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ctz-X9-rbo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="581.60000000000002" y="-104.7976011994003"/>
+            <point key="canvasLocation" x="524" y="206"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="aWN-yt-SPj">
@@ -633,7 +634,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BG7-4W-Lbb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-396" y="679"/>
+            <point key="canvasLocation" x="-449" y="726"/>
         </scene>
     </scenes>
     <resources>
@@ -644,6 +645,7 @@
         <image name="Search" width="18" height="18"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="lfM-cm-1kR"/>
         <segue reference="Fhw-uE-b03"/>
         <segue reference="Ni5-Xt-wio"/>
     </inferredMetricsTieBreakers>
