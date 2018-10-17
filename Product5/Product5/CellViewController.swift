@@ -18,7 +18,7 @@ class CellViewController: UIViewController, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-     myTable.dataSource = self
+        myTable.dataSource = self
         mang = ["Ahmedabad","Bangalore","Bhubaneswar","Chandigarh","Chennai","Delhi","Goa","Hydrabad","Indore"]
         
     }
