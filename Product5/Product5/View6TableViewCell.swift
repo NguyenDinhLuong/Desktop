@@ -14,14 +14,10 @@ class View6TableViewCell: UITableViewCell {
     @IBOutlet weak var imgHinh: UIImageView!
     
     
-    @IBOutlet weak var hinh1: UIImageView!
+    @IBOutlet weak var label1: UILabel!
     
-    @IBOutlet weak var hinh2: UIImageView!
     
-    @IBOutlet weak var hinh3: UIImageView!
-    
-    @IBOutlet weak var label: UILabel!
-    
+    @IBOutlet weak var label2: UILabel!
     
     
     override func awakeFromNib() {

@@ -10,9 +10,9 @@ import UIKit
 
 class CommunityViewController: UIViewController, UITableViewDataSource,UITableViewDelegate {
     
-    var mang: [String] = ["2","3","1","4"]
-    var mang1 : [String] = ["grayStar","grayHeart","forward-arrow"]
-    var mang2 :[String] = ["Luong day","Minh day","Hoang day","Linh day"]
+    var mang: [String] = ["2","4"]
+    var mang1 : [String] = ["2hrs ago","5hrs ago"]
+    var mang2 :[String] = ["Luong day","Linh day"]
     @IBAction func backButton(_ sender: Any) {
         self.performSegue(withIdentifier: "back1", sender: self)
     }
@@ -34,10 +34,8 @@ class CommunityViewController: UIViewController, UITableViewDataSource,UITableVi
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CELL") as! View6TableViewCell
         cell.imgHinh.image = UIImage(named: mang[indexPath.row])
-        cell.hinh1.image = UIImage(named: mang1[0])
-        cell.hinh2.image = UIImage(named: mang1[1])
-        cell.hinh3.image = UIImage(named: mang1[2])
-        cell.label.text = mang2[indexPath.row]
+        cell.label1.text = mang1[indexPath.row]
+        cell.label2.text = mang2[indexPath.row]
         return cell
     }
     
